@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../css/styles.css">
+    <link rel="stylesheet" href="./../../css/admin/admin.css">
+    <title>Registrar Estudiante</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <a href="./../admin.html"><li>Inicio</li></a>
+            <a href="./registerStudent.html"><li>Registrar Estudiante</li></a>
+            <a href="./expelStudent.html"><li>Expulsar Estudiante</li></a>
+        </ul>
+        <button onclick="logout()">Cerrar Sesion</button>
+    </nav>
+
+    <div class="container">
+
+        <h1>Registrar Estudiante</h1>
+
+        <form id="registerForm">
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Nombre">
+            </div>
+            <div>
+                <label for="last_name">Apellido</label>
+                <input type="text" name="last_name" id="last_name" placeholder="Apellido">
+            </div>
+            <div>
+                <label for="username">Nombre de usuario</label>
+                <input type="text" name="username" id="username" placeholder="Nombre de usuario">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div>
+                <label for="pass">Contraseña</label>
+                <input type="password" name="pass" id="pass" placeholder="Contraseña">
+            </div>
+            <div>
+                <label for="phone">Teléfono</label>
+                <input type="text" name="phone" id="phone" placeholder="Teléfono">
+            </div>
+            <div>
+                <label for="age">Edad</label>
+                <input type="number" name="age" id="age" placeholder="Edad">
+            </div>
+                <label for="career">Curso</label>
+                <select name="career" id="career" required>
+                    <option value="0">-- Seleccion un Curso --</option>
+                    <option value="cpp">C++</option>
+                    <option value="python">Python</option>
+                </select>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="./../../js/admin/admin.js"></script>
+    <script src="./../../js/admin/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../css/styles.css">
+    <link rel="stylesheet" href="./../../css/admin/admin.css">
+    <style>
+        .container{
+            display: block!important;
+        }
+        .delete{
+            width: 50px;
+            cursor:pointer;
+        }
+    </style>
+    <title>Expulsar Estudiante</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="./../admin.html"><li>Inicio</li></a>
+            <a href="./registerStudent.html"><li>Registrar Estudiante</li></a>
+            <a href="./expelStudent.html"><li>Expulsar Estudiante</li></a>
+        </ul>
+        <button onclick="logout()">Cerrar Sesion</button>
+    </nav>
+
+    <div class="container">
+        <table id="usersTable">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Nombre</th>
+                    <th>Curso</th>
+                    <th>Expulsar</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="./../../js/admin/admin.js"></script>
+    <script src="./../../js/admin/expel.js"></script>
+</body>
+</html>
