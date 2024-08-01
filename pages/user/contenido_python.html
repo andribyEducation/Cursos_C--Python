@@ -39,36 +39,32 @@
         <main>
             <div class="contenido">
                 <h2 class="tipos-contenido">Creacion de Variables y Constantes</h2>
-                <p class="parrafo-contenido">En C++, las variables y constantes son fundamentales para almacenar y manejar datos. Las variables pueden cambiar su valor durante la ejecución del programa, mientras que las constantes son valores que permanecen inalterados una vez asignados. Es crucial elegir el tipo de datos adecuado y utilizar constantes para evitar errores y mejorar la legibilidad del código.<br> <br>
-                    Variables<br> <br>
-                    •	Declaración: Especifica el tipo de datos y el nombre de la variable.
-                    <br>
+                <p class="parrafo-contenido">Variables:<br><br>
+                    •	Definición: Espacios en memoria para almacenar datos que pueden cambiar durante la ejecución del programa.<br><br>
+                    •	Nomenclatura:<br>
+                    o	Deben comenzar con una letra (a-z, A-Z) o un guion bajo (_).<br>
+                    o	Pueden contener letras, números (0-9), y guiones bajos.<br>
+                    o	No pueden usar palabras reservadas de Python (e.g., for, if, while).<br><br>
+                    Sintaxis:<br><br>
                     
-                    int edad; <br>
-                    double salario; <br> <br>
-                    •	Inicialización: Asigna un valor a la variable al momento de su declaración. <br>
-                    int edad = 30; <br>
-                    double salario = 50000.0; <br> <br>
-
-                    Constantes <br> <br>
-
-                    •	Definición: Se definen utilizando la palabra clave const. Su valor no puede cambiar una vez asignado. <br>
+                    variable = valor<br>
+                    Ejemplos:<br>
                     
-                    const int MAX_EDAD = 120; <br>
-                    const double GRAVEDAD = 9.81; <br> <br>
-                    Ejemplo <br> <br>
+                    nombre = "Juan"  # string<br>
+                    edad = 25  # int<br>
+                    altura = 1.75  # float<br>
+                    es_estudiante = True  # boolean<br>
+                    Buenas Prácticas:<br><br>
+                    •	Usar nombres descriptivos para las variables:<br>
                     
-                    int main() { <br>
-                        int edad = 25; <br>
-                        const double PI = 3.14159; <br>
+                    contador = 10<br>
+                    suma_total = 100.5<br>
+                    nombre_completo = "Ana García"<br><br>
+                    Constantes:<br><br>
+                    •	Definición: Valores que no cambian durante la ejecución del programa. En Python, no hay una manera nativa de crear constantes, pero por convención se usan nombres en mayúsculas.<br><br>
                     
-                        std::cout << "Edad: " << edad << std::endl; <br>
-                        std::cout << "Valor de PI: " << PI << std::endl; <br>
-                    
-                        // PI = 3.14;  // Esto generaría un error de compilación <br>
-                    
-                        return 0; <br>
-                    } <br>
+                    PI = 3.1416<br>
+                    VELOCIDAD_DE_LUZ = 299792458  # en metros por segundo<br>
                     
                 </p>
     

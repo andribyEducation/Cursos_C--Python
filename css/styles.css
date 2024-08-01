@@ -77,3 +77,15 @@ input:focus, select:focus{
 .container{
     font-family: Arial, Helvetica, sans-serif;
 }
+#Tareas_administrador{
+    font-size: 0.9rem;
+    text-align: center;
+}
+#Bienvenida_administrador{
+    font-family: Arial;
+    font-size: 1.2rem;
+}
+#separador{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
