@@ -1,20 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../css/styles.css">
-    <title>Bienvenido</title>
-</head>
-<body>
-    <a href="./user/changePassword.html">Cambiar Contrasena</a>
-    <button onclick="logout()">Cerrar Sesion</button>
-    
-    <div class="container">
-        <p>Bienvenido <span id="user"></span></p>
-    </div>
+<html>
+    <head>
+        <link rel="stylesheet" href="./../css/aaron.css">
+        <link rel="stylesheet" href="./../css/styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Quiz
+        </title>
+    </head>
+    <body>
+        <div id="encabezado">
+            <ul>
+                <li class="item-header" id="titulo">
+                    <h2> AlgoByte</h2>
+                </li>
+                <li class="item-header">
+                    <nav>
+                        <li class="item-nav">
+                            <a href="./user/content.html">Contenido</a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="./user/quiz.html">Quiz</a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="./user/changeCareer.html">Cambiar Curso</a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="./user/changePassword.html">Cambiar Contraseña</a>
+                        </li>
+                        <li class="item-nav">
+                            <a onclick="logout()">Cerrar Sesion</a>
+                        </li> 
+                    </nav>
+                </li>
+            </ul>
+        </div>
+        <main>
+            <p class="welcome-user">Hola <span id="user"></span>!</p>
+            <h2 id="bienvenida">Bienvenido a la academia  </h2>
+            <div class="images">
+                <img src="./../assets/Imagen1.jpg", id="imagen_bienvenida_1", class="imagenes_bienvenida">
+                <img src="./../assets/Imagen3.jpg" id="imagen_bienvenida_2", class="imagenes_bienvenida">
+                <img src="./../assets/Imagen2.jpg", id="imagen_bienvenida_3", class="imagenes_bienvenida">
+            </div>
+            <p id="introduccion">Los lenguajes de programación son la base sobre la cual se construye la tecnología moderna. Desde simples scripts que automatizan tareas repetitivas hasta complejas aplicaciones que cambian el mundo, los lenguajes de programación son una herramienta poderosa que permite a los desarrolladores transformar ideas en realidad.</p>
+        </main>
+        <script src="./../js/script.js"></script>
+        <script src="./../js/user/user.js"></script>
+        <script>
+            let user = JSON.parse(sessionStorage.getItem('user'));
 
-    <script src="./../js/script.js"></script>
-    <script src="./../js/user/user.js"></script>
-</body>
+            document.getElementById('user').innerHTML = user.username;
+            console.log(user.career);
+
+        </script>
+    </body>
 </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./../../css/styles.css">
+        <link rel="stylesheet" href="./../../css/aaron.css">
+        <title>
+            Certificado
+        </title>
+    </head>
+    <body>
+        <div id="encabezado">
+            <ul>
+                <li class="item-header" id="titulo">
+                    <h2 onclick="window.location.href= './../welcome.html'" style="cursor: pointer;"> AlgoByte</h2>
+                </li>
+                <li class="item-header">
+                    <nav>
+                        <li class="item-nav">
+                            <a href="./content.html">Contenido</a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="./quiz.html">Quiz</a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="./changeCareer.html">Cambiar Curso</a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="./changePassword.html">Cambiar Contraseña</a>
+                        </li>
+                        <li class="item-nav">
+                            <a onclick="logout()">Cerrar Sesion</a>
+                        </li> 
+                    </nav>
+                </li>
+            </ul>
+        </div>
+        <main>
+            <p class="welcome-user">¡Felicidades <span id="user"></span>!</p>
+            <h2 id="bienvenida">¡Por completar exitosamente el curso de <span id="career"></span>!</h2>
+
+            <img alt="Certificado del Curso" id="certificate">
+            
+        </main>
+        <script src="./../../js/user/user.js"></script>
+        <script>
+            let user = JSON.parse(sessionStorage.getItem('user'));
+            if (user.quizes.length < 7) {
+                window.location.href = "./quiz.html";
+            }
+            document.getElementById('user').innerHTML = user.username;
+            if (user.career == "cpp") {
+                document.getElementById('career').innerHTML = "C++";
+            }else if (user.career == "python") {
+                document.getElementById('career').innerHTML = "Python";
+            }
+
+            let certificate = document.getElementById('certificate');
+            certificate.src = `./../../assets/${user.career}.jpeg`;
+        </script>
+    </body>
+</html>

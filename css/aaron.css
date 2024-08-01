@@ -1,0 +1,223 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input, select{
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus, select:focus{
+    outline: none;
+    border: 1px solid #0B5ED7;
+    box-shadow: 0 0 10px rgba(11, 94, 215, 0.5);
+}
+
+button {
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 15px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#titulo{
+    margin-left: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    background-image: url(./../assets/fondo.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome-user{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+#bienvenida{
+    text-align: center;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif; 
+    color: #fff;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.images img{
+    border-radius: 50%;
+    width: 15%;
+}
+
+#introduccion{
+    text-align: center;
+    margin-top: 4%;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.contenido{
+    margin: 7rem 0;
+    width: 75%;
+    padding: 1rem 3rem;
+    background-color: rgba(42, 42, 42, 0.7);
+    border-radius: 10px;
+}
+
+.tipos-contenido{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5%;
+}
+
+.parrafo-contenido{
+    margin-left: 10%;
+    margin-right: 5%;
+    line-height: 170%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+/* QUIZ */
+
+.bloque-quiz, #changePassword, #changeCareer{
+    padding: 1rem 3rem;
+    background-color: rgba(42, 42, 42, 0.7);
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    margin: 6rem 0;
+}
+
+.titulo-quiz, p{
+    color: #fff;
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Boton-presentar-quiz{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bloque-quiz ul li{
+    list-style: none;
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.seleccion-simple, .seleccion-multiple, .verdadero-falso{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: start;
+}
+
+.pregunta-quiz{
+    margin-top: 2rem;
+    text-align: left;
+    width: 100%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.enviar-respuesta{
+    margin: 0 auto;
+}
+
+#changePassword, #changeCareer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+#left{
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+}

@@ -5,6 +5,7 @@ document.getElementById("changePassword").addEventListener("submit" , function(e
     let confirmPass = document.getElementById("confirmPass").value;
     let users = JSON.parse(sessionStorage.getItem('users'));
     let user = JSON.parse(sessionStorage.getItem('user'));
+
     if (pass === user.pass && newPassword === confirmPass){
         user.pass = newPassword;
         sessionStorage.setItem('user', JSON.stringify(user));
@@ -16,6 +17,18 @@ document.getElementById("changePassword").addEventListener("submit" , function(e
         sessionStorage.setItem('users', JSON.stringify(users));
         alert('Contraseña cambiada correctamente.');
         logout()
+    }else{
+        if (pass == "" && newPassword == "" && confirmPass == ""){
+            alert('Todos los campos son necesarios');
+        }else{
+            if (newPassword !== confirmPass){
+                alert('Las contraseñas no coinciden.');
+            }else{
+                if (pass !== user.pass){
+                    alert('Contraseña incorrecta.');
+                }
+            }
+        }
     }
 })
 

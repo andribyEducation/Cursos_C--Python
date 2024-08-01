@@ -9,14 +9,29 @@
 </head>
 <body>
 
-    <nav>
+    <div id="encabezado">
         <ul>
-            <a href="./../admin.html"><li>Inicio</li></a>
-            <a href="./registerStudent.html"><li>Registrar Estudiante</li></a>
-            <a href="./expelStudent.html"><li>Expulsar Estudiante</li></a>
+            <li class="item-header" id="titulo">
+                <h2 onclick="window.location.href= './../admin.html'" style="cursor: pointer;"> AlgoByte</h2>
+            </li>
+            <li class="item-header">
+                <nav>
+                    <li class="item-nav">
+                        <a href="./../admin.html">Inicio</a>
+                    </li>
+                    <li class="item-nav">
+                        <a href="./registerStudent.html">Registrar Estudiante</a>
+                    </li>
+                    <li class="item-nav">
+                        <a href="./expelStudent.html">Expulsar Estudiante</a>
+                    </li>
+                    <li class="item-nav">
+                        <a onclick="logout()">Cerrar Sesion</a>
+                    </li> 
+                </nav>
+            </li>
         </ul>
-        <button onclick="logout()">Cerrar Sesion</button>
-    </nav>
+    </div>
 
     <div class="container">
 

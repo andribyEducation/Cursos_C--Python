@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Quiz
+        </title>
+        <script src="Cambio_quiz.js"></script>
+        <link rel="stylesheet" href="./../../css/aaron.css">
+        <link rel="stylesheet" href="./../../css/styles.css">
+    </head>
+    <body>
+        <div id="encabezado">
+            <ul>
+                <li class="item-header" id="titulo">
+                    <h2 onclick="window.location.href= './../welcome.html'" style="cursor: pointer;"> AlgoByte</h2>
+                </li>
+                <li class="item-header">
+                    <nav>
+                        <li class="item-nav">
+                            <a href="./content.html">Contenido</a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="./quiz.html">Quiz</a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="./changeCareer.html">Cambiar Curso</a>
+                        </li>
+                        <li class="item-nav">
+                            <a href="./changePassword.html">Cambiar Contraseña</a>
+                        </li>
+                        <li class="item-nav">
+                            <a onclick="logout()">Cerrar Sesion</a>
+                        </li> 
+                    </nav>
+                </li>
+            </ul>
+        </div>
+
+        <main>
+            <div class="bloque-quiz" id="instructions">
+                <h2 class="titulo-quiz">Reglas del Quiz</h2>
+    
+                <ul>
+                    <li>
+                        El quiz contara con preguntas de: Verdadero y falso, seleccion simple y seleccion multiple
+                    </li>
+                    <li>
+                        Una vez contestadas las preguntas presiona el boton de enviar
+                    </li>
+                </ul>
+                
+                <div style="height: 3rem; display: flex; align-items: center;">
+                    <select id="seleccion_quiz">
+                        <option value="0">-- Seleccione un Quiz --</option>
+                        <option value="1">Quiz 1: Creacion de Variables y Constantes</option>
+                        <option value="2">Quiz 2: Tipos de Dato</option>
+                        <option value="3">Quiz 3: Condicionales</option>
+                        <option value="4">Quiz 4: Ciclos</option>
+                        <option value="5">Quiz 5: Funciones</option>
+                        <option value="6">Quiz 6: Estructuras de Datos basicas</option>
+                        <option value="7">Quiz 7: Programacion Orientada a Obejetos</option>
+                    </select>
+                    <button class="Boton-presentar-quiz" id="goQuiz" onclick="goQuiz()"><span>Presentar Quiz</span></button> 
+                    <a class="Boton-presentar-quiz" href="./certificate.html" id="certificate"><button><span>Certificado</span></button></a>     
+                </div>
+            </div>
+        </main>
+
+        <script src="./../../js/user/quiz.js"></script>
+        <script src="./../../js/user/user.js"></script>
+    </body>
+</html>

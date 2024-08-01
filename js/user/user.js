@@ -13,8 +13,3 @@ function logout(){
     sessionStorage.removeItem('user');
     window.location.href = '/index.html';
 }
-
-let user = JSON.parse(sessionStorage.getItem('user'));
-
-document.getElementById('user').innerHTML = user.username;
-console.log(user.career);
