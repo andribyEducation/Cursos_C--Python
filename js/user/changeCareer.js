@@ -6,7 +6,7 @@ document.getElementById("changeCareer").addEventListener("submit", function (eve
 
     if (pass === user.pass) {
         if (user.quizes.length == 0) {
-            alert('No puedes cambiar de carrera si no has aprobado quizes.'); 
+            alert('No puedes cambiar de carrera si no has aprobado al menos un quiz.'); 
         }else{
             if (user.career === "cpp") {
                 user.career = "python";
@@ -25,6 +25,6 @@ document.getElementById("changeCareer").addEventListener("submit", function (eve
             logout()
         }
     } else {
-        alert("Conttaseña incorrecta.");
+        alert("Contraseña incorrecta.");
     }
 })
