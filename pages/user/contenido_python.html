@@ -69,74 +69,57 @@
                 </p>
     
                 <h2 class="tipos-contenido">tipos de dato</h2>
-                <p class="parrafo-contenido">C++ es un lenguaje de programación de tipado estático, lo que significa que cada variable debe tener un tipo de datos definido en el momento de la declaración. Esto asegura que las operaciones realizadas sobre los datos sean coherentes y seguras. Los tipos de datos pueden ser primitivos, como enteros y flotantes, o más complejos, como estructuras y clases. <br> <br>
-                    Tipos de Datos Básicos <br>
-                    •	Enteros (int, short, long, long long): Usados para representar números enteros. <br>
+                <p class="parrafo-contenido">•	Numéricos: <br>
+                    o	Enteros (int): Números sin parte decimal. Ejemplos: 10, -3, 0<br>
+                    o	Flotantes (float): Números con parte decimal. Ejemplos: 3.14, -0.001<br>
+                    o	Complejos (complex): Números con parte real e imaginaria. Ejemplos: 1+2j, 3-4j<br>
+                    •	Texto (str): Secuencia de caracteres. Se pueden usar comillas simples o dobles. Ejemplos: "Hola", 'Mundo'<br>
+                    •	Booleanos (bool): Valores lógicos. Solo pueden ser True o False. Ejemplos: True, False<br>
+                    Ejemplos de Tipos de Datos:<br>
                     
+                    entero = 10  # int<br>
+                    flotante = 3.14  # float<br>
+                    complejo = 1 + 2j  # complex<br>
+                    cadena = "Hola Mundo"  # str<br>
+                    booleano = True  # bool<br>
                     
-                    int edad = 25; <br>
-                    long distancia = 100000L; <br> <br>
-                    •	Punto Flotante (float, double): Usados para representar números con decimales. <br>
-                    float temperatura = 36.6f; <br>
-                    double pi = 3.141592653589793; <br> <br>
-                    •	Caracteres (char): Usados para representar un solo carácter. <br>
-                    char letra = 'A'; <br> <br>
-                    •	Booleanos (bool): Usados para representar valores de verdad (true o false).
-                    bool esMayorDeEdad = true; <br> <br>
-                    Ejemplo <br> <br>
-                    
-                    int main() { <br>
-                        int edad = 30; <br>
-                        float altura = 1.75f; <br>
-                        char inicial = 'J'; <br>
-                        bool esEstudiante = true; <br>
-                    
-                        std::cout << "Edad: " << edad << std::endl; <br>
-                        std::cout << "Altura: " << altura << std::endl; <br>
-                        std::cout << "Inicial: " << inicial << std::endl; <br>
-                        std::cout << "Es estudiante: " << (esEstudiante ? "Sí" : "No") << std::endl; <br>
-                    
-                        return 0; <br>
-                    }
                     
                 </p>
     
                 <h2 class="tipos-contenido">Condicionales</h2>
-                <p class="parrafo-contenido">Las estructuras condicionales en C++ permiten tomar decisiones en el flujo del programa en función de la evaluación de expresiones booleanas. Esto permite ejecutar diferentes bloques de código dependiendo de ciertas condiciones, lo que hace que el programa pueda responder a diferentes escenarios. <br> <br>
-                    •	Estructura if: Ejecuta un bloque de código si la condición es verdadera. <br>
+                <p class="parrafo-contenido">Definición: Permiten ejecutar código solo si se cumple una condición. <br><br>
+                    Sintaxis:<br>
                     
-                    if (edad >= 18) { <br>
-                        std::cout << "Eres adulto." << std::endl; <br>
-                    } <br> <br>
-                    •	Estructura if-else: Ejecuta un bloque de código si la condición es verdadera, y otro bloque si es falsa. <br>
+                    if condicion:<br>
+                        # código<br>
+                    elif otra_condicion:<br>
+                        # código<br>
+                    else:<br>
+                        # código<br><br>
+                    Ejemplos:<br>
                     
-                    if (edad >= 18) { <br>
-                        std::cout << "Eres adulto." << std::endl; <br>
-                    } else { <br>
-                        std::cout << "Eres menor de edad." << std::endl; <br>
-                    } <br> <br>
-                    •	Estructura if-else if-else: Permite evaluar múltiples condiciones. <br>
+                    edad = 18<br>
+                    if edad >= 18:<br>
+                        print("Eres mayor de edad")<br>
+                    else:<br>
+                        print("Eres menor de edad")<br><br>
+                    Condiciones Anidadas:<br>
                     
-                    if (edad < 13) { <br>
-                        std::cout << "Eres un niño." << std::endl; <br>
-                    } else if (edad < 18) { <br>
-                        std::cout << "Eres un adolescente." << std::endl; <br>
-                    } else { <br>
-                        std::cout << "Eres adulto." << std::endl; <br>
-                    } <br> <br>
-                    Ejemplo <br><br>
+                    numero = 15<br>
+                    if numero > 10:<br>
+                        if numero < 20:<br>
+                            print("El número está entre 10 y 20")<br><br>
+                    Uso de Operadores Lógicos:<br>
+                    <br>
+                    edad = 25<br>
+                    if edad > 18 and edad < 30:<br>
+                        print("Tienes entre 19 y 29 años")<br><br>
+                    Comparación de Cadenas:<br>
                     
-                    int main() { <br>
-                        int edad = 20; <br>
+                    palabra = "Python"<br>
+                    if palabra == "Python":<br>
+                        print("La palabra es Python")<br>
                     
-                        if (edad >= 18) { <br>
-                            std::cout << "Eres mayor de edad." << std::endl; <br>
-                        } else { <br>
-                            std::cout << "Eres menor de edad." << std::endl;<br>
-                        } <br>
-                    
-                        return 0; <br>
-                    } <br>
                     
                 </p>
     
